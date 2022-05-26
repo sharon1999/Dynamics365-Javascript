@@ -1,3 +1,6 @@
+# Template file for best coding standards
+## onSave
+```javascript
 function onLoad(executionContext){
     if (executionContext != null && executionContext != undefined && executionContext != ""){
         var formContext = executionContext.getFormContext();
@@ -7,7 +10,10 @@ function onLoad(executionContext){
         }    
     }
 }
+```
+## onLoad
 
+```javascript
 function onSave(executionContext){    
     if (executionContext != null && executionContext != undefined && executionContext != ""){
         var formContext = executionContext.getFormContext();
@@ -17,8 +23,9 @@ function onSave(executionContext){
         }    
     }    
 }
-
-//GET function
+```
+## GET function
+```javascript
 function getControlValue(controlname, formContext) {
     var value = "";
     var control = formContext.getControl(controlname);
@@ -30,7 +37,9 @@ function getControlValue(controlname, formContext) {
   }
   return value;
 }
-//SET function
+```
+## SET function
+```javascript
 function setValue(controlname, value, formContext) {
   var control = formContext.getControl(controlname);
   if (control != undefined && control != null && control != "") {
@@ -40,7 +49,9 @@ function setValue(controlname, value, formContext) {
     }
   }
 }
-//Check if a variable is null
+```
+## Check if a variable is null
+```javascript
 function variableConditionCheck(variable){
     var result = false;
     if (variable != null && variable != undefined && variable != ""){
@@ -48,4 +59,5 @@ function variableConditionCheck(variable){
     }
     return result;
 }
+```
 
