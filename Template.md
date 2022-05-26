@@ -1,5 +1,5 @@
 # Template file for best coding standards
-## onSave
+## onLoad
 ```javascript
 function onLoad(executionContext){
     if (executionContext != null && executionContext != undefined && executionContext != ""){
@@ -11,7 +11,7 @@ function onLoad(executionContext){
     }
 }
 ```
-## onLoad
+## onSave
 
 ```javascript
 function onSave(executionContext){    
