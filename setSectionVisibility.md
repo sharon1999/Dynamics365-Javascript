@@ -1,4 +1,4 @@
-#Control Section Visibility
+# Control Section Visibility
 ```javascript
 function setSectionVisibility(tabname, sectionname, visibility, formContext){
     var tabObj = formContext.ui.tabs.get(tabname);
