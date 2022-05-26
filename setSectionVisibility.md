@@ -1,4 +1,5 @@
-//Control Section Visibility
+#Control Section Visibility
+```javascript
 function setSectionVisibility(tabname, sectionname, visibility, formContext){
     var tabObj = formContext.ui.tabs.get(tabname);
     var variableCondition = variableConditionCheck(tabObj);
@@ -15,3 +16,4 @@ function setSectionVisibility(tabname, sectionname, visibility, formContext){
         }
     }
 }
+```
