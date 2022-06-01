@@ -60,4 +60,16 @@ function variableConditionCheck(variable){
     return result;
 }
 ```
-
+## Register on Change(Single function)
+```javascript
+function  registerOnChange(executionContext){
+        if (executionContext != null && executionContext != undefined && executionContext != ""){
+            var formContext = executionContext.getFormContext();
+            if (formContext != null && formContext != undefined && formContext != ""){
+                if (formContext.getAttribute("attributename") != null) {
+                    formContext.getAttribute("attributename").addOnChange(Function_Name1);                    
+                 }
+            }
+        } 
+ }  
+```
